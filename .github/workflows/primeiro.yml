@@ -1,0 +1,14 @@
+name: Hello Github Actions
+
+on: [push, pull_request]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echoing
+        run: echo "Hello world!"
+      - name: checking versions
+        run: |
+          node -v
+          npm -v
