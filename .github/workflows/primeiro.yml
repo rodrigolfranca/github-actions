@@ -3,7 +3,7 @@ name: Hello Github Actions
 on: [push, pull_request]
 
 jobs:
-  run-shell-command:
+  nome-da-action:
     runs-on: ubuntu-latest
     steps:
       - name: echoing
