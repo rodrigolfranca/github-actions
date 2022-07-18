@@ -1,0 +1,12 @@
+name: becalled
+
+on: workflow_call
+
+jobs:
+  been-called:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checking versions
+        run: |
+          node -v
+          npm -v

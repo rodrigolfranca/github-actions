@@ -1,0 +1,13 @@
+name: Gatilho = Schedule
+
+on: 
+  schedule:    
+    - cron:  '0 0 * * *'
+
+
+jobs:
+  workflow-calling:
+    runs-on: ubuntu-latest
+    steps:
+    - name: calling workflow
+      uses: actions/becalled
